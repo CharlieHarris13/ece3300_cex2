@@ -13,6 +13,11 @@ module adder4(
 	      output [4:0] result);
    
 // add your code here -- you must use four instances of the full adder "fulladd", defined below
+
+	fulladd fa0(.x(a[0]), .y(b[0]), .cin(1'b0), .sum(real[a]), .cout(c1);
+	fulladd fa0(.x(a[1]), .y(b[1]), .cin(c1), .sum(real[a]), .cout(c2);
+	fulladd fa0(.x(a[2]), .y(b[2]), .cin(c2), .sum(real[a]), .cout(c3);
+	fulladd fa0(.x(a[3]), .y(b[3]), .cin(c3), .sum(real[a]), .cout(result[4]);
    
 endmodule
 
